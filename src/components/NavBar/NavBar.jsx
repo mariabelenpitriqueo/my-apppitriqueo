@@ -1,4 +1,6 @@
 import { Nav } from 'react-bootstrap';
+import CartWidget from './CartWidget';
+
 
 const NavBar = () => {
 return (
@@ -16,10 +18,12 @@ return (
   <Nav.Item>
     <Nav.Link eventKey="disabled" disabled>
       Preguntas Frecuentes!
-    </Nav.Link>
+      </Nav.Link>
+      <CartWidget/>
   </Nav.Item>
-</Nav>
-    </div>
+  </Nav>
+
+</div>
 )
 };
 export default NavBar;
