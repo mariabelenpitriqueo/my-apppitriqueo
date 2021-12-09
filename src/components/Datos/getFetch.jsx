@@ -1,11 +1,11 @@
 const products = [
-    {id: 1, picture:''},
-    {id: 2, picture:''},
-    {id: 3, picture:''},
-    {id: 4, picture:''},
-    {id: 5, picture:''},
-    {id: 6, picture:''},
-    {id: 7, picture:''}
+    {id: 1, photo:'', name:'cuadro1', autor:'Vincent vanGoht', price: '$89' },
+    {id: 2, photo:'', name:'cuadro2', autor: 'Claude Monet', price: '$190'},
+    {id: 3, photo:'', name:'cuadro3', autor: 'Paul Cezanne', price: '$190'},
+    {id: 4, photo:'', name:'cuadro4', autor: 'Claude Monet', price: '$190'},
+    {id: 5, photo:'', name:'cuadro5', autor: 'Claude Monet', price: '$190'},
+    {id: 6, photo:'', name:'cuadro6', autor: 'Claude Monet', price: '$190'},
+    {id: 7, photo:'', name:'cuadro7', autor: 'Claude Monet', price: '$190'},
 ];
 export const getFetch = new Promise ((resolve) => {
     setTimeout(()=>{
