@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 import {getFetch} from "../Datos/getFetch"
+import ItemList from '../ItemList/ItemList'
 
 function ItemListContainer( { greeting }) {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
-    useEffect(() =>{
+    useEffect(() => {
         getFetch
         .then(answer => setProducts(answer))
         .finally(() => setLoading(false))
@@ -19,6 +20,7 @@ return (
        <h2>Loading...</h2>
        :
        <ItemList products = {products} />
+       
 }
     </div>
 )

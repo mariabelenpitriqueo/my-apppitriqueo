@@ -1,6 +1,6 @@
 import React from "react";
 
-function Item (prod){
+function Item ({prod}){
     return (
         <div
         key = {prod.id}
