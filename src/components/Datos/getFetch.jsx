@@ -1,5 +1,5 @@
 const products = [
-    {id: 1, photo:'', name:'cuadro1', autor:'Vincent vanGoht', price: '$89' },
+    {id: 1, photo:"src/public/image/picture1.jpg", name:'cuadro1', autor:'Vincent vanGoht', price: '$89' },
     {id: 2, photo:'', name:'cuadro2', autor: 'Claude Monet', price: '$190'},
     {id: 3, photo:'', name:'cuadro3', autor: 'Paul Cezanne', price: '$190'},
     {id: 4, photo:'', name:'cuadro4', autor: 'Claude Monet', price: '$190'},
