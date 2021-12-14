@@ -20,8 +20,9 @@ return (
        <h2>Loading...</h2>
        :
        <ItemList products = {products} />
-       
+         
 }
+
     </div>
 )
 }

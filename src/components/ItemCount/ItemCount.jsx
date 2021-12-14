@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-const IntemCount = () => {
-  const inicial = 1;
+const ItemCount = () => {
+  const inicial = 0;
   const maximo = 10;
 
   const [value, setValue] = useState(inicial);
@@ -13,7 +13,6 @@ const IntemCount = () => {
 
   return (
     <div>
-      <h1>Producto x</h1>
       <h2>{value}</h2>
       <button onClick={handleSuma}>+</button>
       <button onClick={handleResta}>-</button>
@@ -21,4 +20,4 @@ const IntemCount = () => {
     </div>
   );
 };
-export default IntemCount;
+export default ItemCount;
