@@ -45,7 +45,7 @@ function App() {
   
       <Route
          exact
-         path="/detail/id" 
+         path="/detail/:id" 
          element={<ItemDetailContainer /> } 
          />
 
