@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import getOneProduct from './Datos/getOneProduct'
+import getOneProduct from '../Datos/getOneProduct'
 import ItemDetail from '../ItemDetail/ItemDetail'
 
 
@@ -17,6 +17,7 @@ const ItemDetailContainer = () => {
     return (
         <div>
             <h2>ItemDetailContainer</h2>
+            
             <ItemDetail item={item}/>
           
         </div>

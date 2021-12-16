@@ -1,5 +1,6 @@
-import { Nav } from 'react-bootstrap';
-import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom'
+import { Nav } from 'react-bootstrap'
+import CartWidget from './CartWidget'
 
 
 const NavBar = () => {
@@ -7,19 +8,19 @@ return (
     <div>
     <Nav justify variant="tabs" defaultActiveKey="/home">
   <Nav.Item>
-    <Nav.Link href="/home">Myapp!</Nav.Link>
+    <Link to="/Myapp!">Myapp!</Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="link-1">Shop!</Nav.Link>
+    <Link to="/Shop!">Shop!</Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="link-2">Contact!</Nav.Link>
+    <Link to="Contact!">Contact!</Link>
   </Nav.Item>
+
   <Nav.Item>
-    <Nav.Link eventKey="disabled" disabled>
-      Preguntas Frecuentes!
-      </Nav.Link>
+      <Link to= "/cart" >Carrito
       <CartWidget/>
+      </Link>
   </Nav.Item>
   </Nav>
 

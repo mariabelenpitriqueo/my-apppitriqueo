@@ -1,8 +1,12 @@
-import { useState } from 'react';
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemCount from './components/ItemCount/ItemCount'
+import {BrowserRouter, Routes, Route } from 'react-router-dom'
+import {useState} from 'react'
+import './App.css'
+import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+
+
+
 
 
 
@@ -10,14 +14,38 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <NavBar/>
-      <ItemListContainer greeting='Hola ItemListContainer'/>
-      <ItemCount/>  
-      
-      
-      </div>
-      
+  <BrowserRouter>
+  <center>
+       <NavBar/>
+
+       <Routes>
+
+       <Route
+         exact
+         path="/" 
+         element={<ItemListContainer greeting='Hola ItemListContainer'/>} 
+         />
+
+      <Route
+         exact
+         path="/Shop!" 
+         element={<ItemListContainer greeting='Hola ItemListContainer'/>} 
+         />
+      <Route
+         exact
+         path="/Contact!" 
+         element={<ItemListContainer greeting='Hola ItemListContainer'/>} 
+         />
+  
+      <Route
+         exact
+         path="/detalle" 
+         element={<ItemDetailContainer /> } 
+         />
+
+</Routes>
+      </center>
+    </BrowserRouter>
   )
 }
 
