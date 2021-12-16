@@ -2,28 +2,29 @@ import React from 'react'
 import {useParams} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
-
+import {getFetch} from "../Datos/getFetch"
 
 const ItemDetailContainer = () => {
-    const [item, setItem] = useState({});
-    console.log('item', item);
+    const [prod, setProd] = useState({});
+    
     
 
     
-    const {id} = useParams ()
+    const { id } = useParams ();
      
 
 
     useEffect(() => {
         getFetch
-        .then((answer)  => setItem(answer.find(prod => prod.id === parseInt(id))))
-;    },[]);
+        .then(answer  => setProd(answer.find(prod => prod.id === parseInt(id))))
+
+   },[])
 
     return (
         <div>
             <h2>ItemDetailContainer</h2>
             
-            <ItemDetail item={item}/>
+            <ItemDetail prod={prod}/>
           
         </div>
     );
