@@ -11,7 +11,7 @@ return (
     <Link to="/">Home</Link>
   </Nav.Item>
   <Nav.Item>
-    <Link to="/category/GrafictArt">Grafict Art</Link>
+    <Link to="/category/GraphicArt">Graphic Art</Link>
   </Nav.Item>
   <Nav.Item>
     <Link to="/category/Vintage">Vintage</Link>
@@ -21,7 +21,7 @@ return (
   </Nav.Item>
 
   <Nav.Item>
-      <Link to= "/cart" >Carrito
+      <Link to= "/cart" >Cart
       <CartWidget/>
       </Link>
   </Nav.Item>
