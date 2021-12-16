@@ -1,4 +1,4 @@
-import React from "react";
+import {Link} from 'react-router-dom'
 
 
 
@@ -20,8 +20,13 @@ function Item ({prod}){
         </div>
            
            <div className='card-footer'>
+
+            <Link to={`/detail/${prod.id}`}>
                <button className='btn btn-outline-primary btn-block'>Detalle del producto
                </button>   
+            </Link>
+               
+
             </div>
         
      </div>

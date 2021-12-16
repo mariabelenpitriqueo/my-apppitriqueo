@@ -28,18 +28,24 @@ function App() {
 
       <Route
          exact
-         path="/Shop!" 
+         path="/category/:idCate" 
          element={<ItemListContainer greeting='Hola ItemListContainer'/>} 
          />
       <Route
          exact
-         path="/Contact!" 
+         path="/category/:idCate" 
+         element={<ItemListContainer greeting='Hola ItemListContainer'/>} 
+         />
+         
+         <Route
+         exact
+         path="/category/:idCate" 
          element={<ItemListContainer greeting='Hola ItemListContainer'/>} 
          />
   
       <Route
          exact
-         path="/detalle" 
+         path="/detail/id" 
          element={<ItemDetailContainer /> } 
          />
 

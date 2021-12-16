@@ -8,13 +8,16 @@ return (
     <div>
     <Nav justify variant="tabs" defaultActiveKey="/home">
   <Nav.Item>
-    <Link to="/Myapp!">Myapp!</Link>
+    <Link to="/">Home</Link>
   </Nav.Item>
   <Nav.Item>
-    <Link to="/Shop!">Shop!</Link>
+    <Link to="/category/GrafictArt">Grafict Art</Link>
   </Nav.Item>
   <Nav.Item>
-    <Link to="Contact!">Contact!</Link>
+    <Link to="/category/Vintage">Vintage</Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Link to="/category/Pictures">Pictures</Link>
   </Nav.Item>
 
   <Nav.Item>
