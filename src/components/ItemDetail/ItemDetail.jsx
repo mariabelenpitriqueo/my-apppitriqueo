@@ -1,3 +1,5 @@
+import ItemCount from "../ItemCount/ItemCount"
+
 function ItemDetail({prod}){
 
 return(
@@ -17,7 +19,8 @@ return(
         </div>
            
            <div className='card-footer'>
-               <button className='btn btn-outline-primary btn-block'>Agregar al carrito
+           <ItemCount />
+               <button className='btn btn-outline-primary btn-block'>Add to cart!
                </button>   
             
                
