@@ -1,7 +1,5 @@
 import {Link} from 'react-router-dom'
 
-
-
 function Item ({prod}){
     return (
         <div
@@ -16,7 +14,7 @@ function Item ({prod}){
         
         <div className ='card body'>
             <img src={prod.photo} alt='' className='w-50'/>
-            {prod.price}
+            
         </div>
            
            <div className='card-footer'>
