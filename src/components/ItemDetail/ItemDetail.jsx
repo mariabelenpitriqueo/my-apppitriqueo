@@ -11,6 +11,7 @@ return(
         <div className = 'card w-100 mt-5'>
            <div className = 'card-header'>
             {`${prod.name} - ${prod.autor}`}
+            
         </div>
         
         <div className ='card body'>
@@ -19,9 +20,8 @@ return(
         </div>
            
            <div className='card-footer'>
-           <ItemCount />
-               <button className='btn btn-outline-primary btn-block'>Add to cart!
-               </button>   
+           <ItemCount stock={prod.stock} />
+                
             
                
 
