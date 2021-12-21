@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock, onAdd}) => {
   const [number, setNumber] = useState (1);
 
   const add = () => {
@@ -19,7 +19,7 @@ return (
   <div>
     <button onClick={add}>+</button>
     <button onClick={substract}>-</button>
-    <button>Add to Cart</button>
+    <button disabled={number === 0} onClick={() => onAdd(number)}>Add to Cart</button>
   </div>
   </div>
 );

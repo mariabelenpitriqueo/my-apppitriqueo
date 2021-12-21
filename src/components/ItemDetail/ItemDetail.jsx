@@ -1,6 +1,16 @@
+import { useState } from "react"
+import { Link } from "react-router-dom"
 import ItemCount from "../ItemCount/ItemCount"
 
 function ItemDetail({prod}){
+
+const [goToCart, setGoToCart]  = useState (true)
+
+
+const onAdd = (quantity) => {
+  console.log(quantity)
+  setGoToCart(false);
+}
 
 return(
   <div
@@ -20,11 +30,12 @@ return(
         </div>
            
            <div className='card-footer'>
-           <ItemCount stock={prod.stock} />
-                
-            
-               
-
+            {goToCart? (
+            <ItemCount stock={prod.stock} onAdd={onAdd} /> 
+            ) : (
+            <Link to={'/cart'}>Check Out</Link>
+            )}
+          
             </div>
         
      </div>
