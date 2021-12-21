@@ -10,6 +10,7 @@ function Item ({prod}){
         <div className = 'card w-100 mt-5'>
            <div className = 'card-header'>
             {`${prod.name} - ${prod.autor}`}
+            
         </div>
         
         <div className ='card body'>
