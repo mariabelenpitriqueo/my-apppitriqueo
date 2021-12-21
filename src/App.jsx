@@ -4,6 +4,7 @@ import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import CartWidget from './components/NavBar/CartWidget'
 
 
 
@@ -42,7 +43,11 @@ function App() {
          path="/category/:idCate" 
          element={<ItemListContainer greeting='Hola ItemListContainer'/>} 
          />
-  
+         <Route
+         exact
+         path="/cart" 
+         element={<CartWidget/>} 
+         />
       <Route
          exact
          path="/detail/:id" 
