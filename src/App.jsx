@@ -5,7 +5,7 @@ import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import CartWidget from './components/NavBar/CartWidget'
-
+import { CartContext } from './context/CardContext'
 
 
 
@@ -15,6 +15,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
+<CartContext.Provider>
   <BrowserRouter>
   <center>
        <NavBar/>
@@ -55,8 +56,10 @@ function App() {
          />
 
 </Routes>
+     
       </center>
     </BrowserRouter>
+    </CartContext.Provider>
   )
 }
 
