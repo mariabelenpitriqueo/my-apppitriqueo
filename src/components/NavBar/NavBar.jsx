@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Nav } from 'react-bootstrap'
-import CartWidget from './CartWidget'
+
 
 
 const NavBar = () => {
@@ -22,7 +22,7 @@ return (
 
   <Nav.Item>
       <Link to= "/cart" >Cart
-      <CartWidget/>
+      
       </Link>
   </Nav.Item>
   </Nav>
