@@ -1,13 +1,11 @@
 
-import { useContext } from 'react'
-import { CartContext} from '../../context/CartContext'
-
+import { useCartContext } from '../../context/CartContext'
 
 
 function CartWidget(){
 
 
- const {  cartList, deleteCart  } = useContext(CartContext)
+ const {  cartList, deleteCart  } = useCartContext()
 
 
     return (
