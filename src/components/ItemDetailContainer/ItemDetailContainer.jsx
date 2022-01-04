@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
         .then(answer  => setProd(answer.find(prod => prod.id === parseInt(id))))
         setTimeout(() => {
             setLoading(false);
-          }, 5000);
+          }, 3000);
     
    } ,[])
 
