@@ -6,7 +6,7 @@ import {getFetch} from "../Datos/getFetch"
 
 const ItemDetailContainer = () => {
     const [prod, setProd] = useState({});
-    
+     const [loading, setLoading] = useState(true)
     
 
     
@@ -17,17 +17,22 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         getFetch
         .then(answer  => setProd(answer.find(prod => prod.id === parseInt(id))))
+        setTimeout(() => {
+            setLoading(false);
+          }, 5000);
+    
+   } ,[])
 
-   },[])
 
     return (
         <div>
-            <h2>ItemDetailContainer</h2>
+            <>
+        {loading ? <h2>Loading... </h2>:<ItemDetail prod={prod}/>}
+    </>
+        
             
-            <ItemDetail prod={prod}/>
-          
         </div>
-    );
-};
+    )
+}
 
 export default ItemDetailContainer;
