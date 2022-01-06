@@ -15,7 +15,7 @@ const onAdd = (quantity) => {
   addToCart({...prod,quantity:quantity})
   setGoToCart(false);
 }
-
+console.log(cartList);
 return(
   <div
         key = {prod.id}
